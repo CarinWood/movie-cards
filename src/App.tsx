@@ -1,7 +1,10 @@
+
+import Home from "./pages/Home";
+
 export function App() {
   return (
-    <>
-      <h1>This is the App component</h1>
-    </>
+    <div className="app">
+      <Home/>
+    </div>
   );
 }

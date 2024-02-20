@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "mickey";
+    src: url('../assets/fonts/HelloMickeys-ARPB7.otf');
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url('../assets/fonts/Raleway-VariableFont_wght.ttf');
+}
+
+.top-page {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.headline {
+    font-family: "mickey";  
+    color: white;
+    font-size: 40px;
+}
