@@ -5,15 +5,45 @@ form {
     align-items: center;
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 6px;
+    padding: 10px;
     width: 400px;
-    height: 200px;
 }
 
-.title-label {
+form div {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.rating-div {
+    padding-right: 30px;
+}
+
+form div article {
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 25px;
+
+
+}
+
+form div article span {
+    margin: 0px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-label, .range-label {
     color: white;
     font-family: "mickey";  
     margin-right: 10px;
     font-size: 20px;
+    width: 50px;
 }
 
 .title-input {
@@ -32,7 +62,6 @@ form button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "inter";
     font-size: 18px;
     font-family: "raleway";
     text-shadow: 2px 2px black;
