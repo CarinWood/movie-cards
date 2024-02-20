@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./addMovie.css";
+import { useMovieContext } from "../../contexts/MovieContexts";
 
 const AddMovie = () => {
+  const { setMovies } = useMovieContext();
   const [inputVal, setInputVal] = useState("");
   const [stars, setStars] = useState(1);
   const [genre, setGenre] = useState("");
@@ -9,10 +11,16 @@ const AddMovie = () => {
 
   const addRating = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log(inputVal);
-    console.log(stars);
-    console.log(genre);
-    console.log(text);
+    const movie = {
+      title: inputVal,
+      rating: stars,
+      genre: genre,
+      description: text,
+    };
+
+    setMovies((prevMovies) => {
+      return [...prevMovies, movie];
+    });
   };
 
   const clear = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -29,13 +37,14 @@ const AddMovie = () => {
   };
 
   const handleSelectGenre = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    console.log(e.target.value);
     setGenre(e.target.value);
   };
 
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setText(e.target.value);
   };
+
+
 
   return (
     <form>
