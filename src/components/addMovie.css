@@ -5,7 +5,7 @@ form {
     align-items: center;
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 6px;
-    padding: 10px;
+    padding: 30px 10px 10px 0px;  
     width: 400px;
 }
 
@@ -38,20 +38,27 @@ form div article span {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.title-label, .range-label {
+.input-label {
     color: white;
     font-family: "mickey";  
     margin-right: 10px;
     font-size: 20px;
-    width: 50px;
+    width: 90px;
 }
 
-.title-input {
+.title-input{
     font-size: 18px;
+    width: 200px;
     font-family: "raleway";
     border: none;
     outline: none;
     border-radius: 3px;
+    padding: 2px 0px 2px 8px;
+}
+
+select {
+    font-size: 16px;
+    font-family: "raleway";
     padding: 2px 0px 2px 8px;
 }
 
@@ -70,4 +77,27 @@ form button {
 
 form button:active {
     transform: translateY(3px);
+}
+
+textarea {
+    resize:unset;
+    font-size: 18px;
+    width: 200px;
+    height: 80px;
+    font-family: "raleway";
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px 0px 2px 8px;
+ 
+}
+
+.description-div {
+    align-items: flex-start;
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
