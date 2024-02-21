@@ -13,6 +13,7 @@ const AddMovie = () => {
     e.preventDefault();
     const movie = {
       title: inputVal,
+      img: "default",
       rating: stars,
       genre: genre,
       description: text,
@@ -88,6 +89,7 @@ const AddMovie = () => {
             <option value="Thriller">Thriller</option>
             <option value="Western">Western</option>
             <option value="Sci-fi">Sci-fi</option>
+            <option value="Children">Children</option>
           </select>
         </article>
       </div>

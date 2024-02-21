@@ -12,9 +12,9 @@ const {movies} = useMovieContext()
         <p className="headline">Movie Rating</p>
         <AddMovie />
       </div>
-      <div>
+      <div className="bottom-page">
         {movies.map((movie, i) => {
-           return <div key={i}> <MovieCard title={movie.title}/></div>
+           return <div key={i}> <MovieCard title={movie.title} img={movie.img} rating={movie.rating}/></div>
         })}
       
       </div>

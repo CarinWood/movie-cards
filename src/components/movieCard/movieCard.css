@@ -1,4 +1,40 @@
+
+.movie-card {
+    border-radius: 5px;
+    width: 200px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "raleway";
+    margin: 20px;
+}
+
+.card-img {
+    width: 200px;
+    height: 270px;
+    object-fit:fill;
+    border-radius: 8px;
+}
+
 .card-title {
     color: white;
     font-size: 18px;
+    margin-top: 5px;
+
+}
+
+.card-description {
+    color: white;
+    font-size: 18px;
+}
+
+.card-rating {
+    margin-top: 5px;
+    color: yellow;
+}
+
+.read-review {
+    color: white;
 }
