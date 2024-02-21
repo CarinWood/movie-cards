@@ -7,9 +7,10 @@ type movieProps = {
   rating: number;
   description: string;
   genre: string;
-};
+  deleteCard: (description: string) => void
+ };
 
-const MovieCard: FC<movieProps> = ({ title, rating, description, genre }) => {
+const MovieCard: FC<movieProps> = ({ title, rating, description, genre, deleteCard }) => {
   const getRating = () => {
     switch (rating) {
       case 1:
@@ -66,9 +67,11 @@ const MovieCard: FC<movieProps> = ({ title, rating, description, genre }) => {
     }
   };
 
+
+
   return (
     <>
-      <div className="movie-card">
+      <div className="movie-card" onClick={() => deleteCard(description)}>
         <p className="card-title">{title}</p>
         <div className="rate-gen">
           <div className="card-rating">{getRating()}</div>

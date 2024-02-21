@@ -29,27 +29,31 @@ export function MovieContextProvider({ children }: { children: ReactNode }) {
     },
     {
       title: "Fifty Shades of Grey",
-      rating: 3,
+      rating: 1,
       genre: "Romance",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quia repellendus, corporis ab repudiandae cum iste ex molestias perspiciatis sequi?",
+      description:
+        "Well I thought I would see what all the fuss was about and boy did I wish I hadn't I have seen very bad romantic comedies that are better than this film",
     },
     {
       title: "The Lord of the Rings",
       rating: 4,
       genre: "Fantasy",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quia repellendus, corporis ab repudiandae cum iste ex molestias perspiciatis sequi?",
+      description:
+        "Simply incredible. Never before have I seen a 3 hour movie that didn't seem like 3 hours!",
     },
     {
       title: "Annihilation",
       rating: 2,
       genre: "Sci-fi",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quia repellendus, corporis ab repudiandae cum iste ex molestias perspiciatis sequi?",
+      description:
+        "Lena, a biologist, is in a daze. Her soldier husband is missing in action and without him, she is struggling to focus on what remains of her life.",
     },
     {
-      title: "Frost",
+      title: "Frozen",
       rating: 5,
       genre: "Children",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quia repellendus, corporis ab repudiandae cum iste ex molestias perspiciatis sequi?",
+      description:
+        "Featuring terrific female characters, endlessly funny sidekicks and a genuinely jaw-dropping score, this is the best film from Disney in close to a generation.",
     },
   ]);
 
