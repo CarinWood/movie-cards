@@ -4,11 +4,12 @@ import { IoStarOutline } from "react-icons/io5";
 
 type movieProps = {
   title: string;
-  img: string;
   rating: number;
+  description: string;
+  genre: string;
 };
 
-const MovieCard: FC<movieProps> = ({ title, img, rating }) => {
+const MovieCard: FC<movieProps> = ({ title, rating, description, genre }) => {
   const getRating = () => {
     switch (rating) {
       case 1:
@@ -66,11 +67,17 @@ const MovieCard: FC<movieProps> = ({ title, img, rating }) => {
   };
 
   return (
-    <div className="movie-card">
-      <img className="card-img" src={img} alt={title} />
-      <p className="card-title">{title}</p>
-      <div className="card-rating">{getRating()}</div>
-    </div>
+    <>
+      <div className="movie-card">
+        <p className="card-title">{title}</p>
+        <div className="rate-gen">
+          <div className="card-rating">{getRating()}</div>
+          <p className="card-genre"><i>{genre}</i></p>
+        </div>
+
+        <p className="card-desc">{description}</p>
+      </div>
+    </>
   );
 };
 

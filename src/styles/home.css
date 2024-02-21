@@ -18,10 +18,11 @@
 
 .bottom-page {
     width: 100%;
+    padding: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 80vh;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .headline {

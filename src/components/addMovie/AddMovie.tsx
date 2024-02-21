@@ -22,6 +22,11 @@ const AddMovie = () => {
     setMovies((prevMovies) => {
       return [...prevMovies, movie];
     });
+
+    setInputVal("");
+    setStars(1);
+    setGenre("");
+    setText("");
   };
 
   const clear = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -44,8 +49,6 @@ const AddMovie = () => {
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setText(e.target.value);
   };
-
-
 
   return (
     <form>
@@ -98,7 +101,7 @@ const AddMovie = () => {
           Description:
         </label>
         <article>
-          <textarea value={text} onChange={handleTextChange} />
+          <textarea value={text} onChange={handleTextChange} maxLength={120} />
         </article>
       </div>
       <div className="button-div">
